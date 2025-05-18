@@ -13,19 +13,18 @@ This project focuses on improving fraud detection in financial transactions usin
 - **Customer Demographics**: Age, location, transaction history, and customer activity.
 
 ## 🔧 Tools & Techniques
-- **Machine Learning Models**: LightGBM, Random Forest, XGBoost.
+- **Machine Learning Models**: LightGBM, Random Forest, XGBoost, Logistic Regression.
 - **Evaluation Metrics**: Accuracy, Sensitivity, Specificity, and Positive Predictive Value (PPV).
 - **Confusion Matrix**: Used to analyze True Positives, False Positives, True Negatives, and False Negatives in fraud detection.
 
 ## 🔍 Key Findings
-- **Fraud Patterns**: Fraudulent transactions are typically small and occur during periods of low customer activity, especially between **0 - 6 AM**.
+- **Fraud Patterns**: Fraudulent transactions are typically small and occur during periods of low customer activity, especially between **12 AM - 6 AM**.
 - **Model Performance**: 
   - **LightGBM** achieved the highest accuracy (0.784) and AUC (0.871).
   - **Random Forest** and **XGBoost** performed comparably with slightly lower accuracy.
-  - **PPV** values were low, indicating the need for further model optimization.
 
 ## 💡 Recommendations
-- **Transaction Alerts**: Implement OTP verification and limit banking services for customers aged 65 and above during high-risk hours (0 - 6 AM).
+- **Transaction Alerts**: Implement OTP verification and limit banking services for customers aged 65 and above during high-risk hours (12 AM - 6 AM).
 - **Flagging Strategy**: Rather than blocking transactions immediately, flag suspicious accounts for further investigation to reduce false positives.
 - **Regular Updates**: Send fraud pattern updates and summary statements, particularly on Wednesdays, to help customers identify potential fraud.
 
@@ -37,3 +36,6 @@ This project focuses on improving fraud detection in financial transactions usin
 ## 🔗 References
 - Sohony, I., Pratap, R., & Nambiar, U. (2018). *Ensemble learning for credit card fraud detection*. Proceedings of the ACM India Joint International Conference on Data Science and Management of Data, 289–294. https://doi.org/10.1145/3152494.3156815
 - Fayzrakhmanov, R., Kulikov, A., & Repp, P. (n.d.). *The Difference between Precision-recall and ROC Curves for Evaluating the Performance of Credit Card Fraud Detection Models*. http://dx.doi.org/10.25673/5577
+
+## ❗️Disclaimer
+This project was developed as part of academic coursework and is shared here for educational and profolio purpose. Unauthorised use, reproduction or distribution is not permitted and may violate academic integrity policies. 
